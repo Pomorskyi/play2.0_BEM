@@ -1,4 +1,4 @@
-$purple-color: #6c43bf;
+@use 'blocks/base/base';
 
 .header {
   .header__announcement {
@@ -35,7 +35,7 @@ $purple-color: #6c43bf;
   }
   ul > li:hover {
     font-weight: 900;
-    color: $purple-color;
+    color: base.$purple-color;
   }
 
   ul > li > a {
@@ -55,7 +55,7 @@ $purple-color: #6c43bf;
     .header__left-list_selected {
       background-color: white;
       font-weight: 900;
-      color: $purple-color;
+      color: base;
     }
   }
 
@@ -80,5 +80,38 @@ $purple-color: #6c43bf;
     width: 1px;
     height: 1.5rem;
     background-color: #dadada;
+  }
+
+  .header__navigation {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    ul {
+      overflow: auto;
+      clear: both;
+      display: block;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    ul > li {
+      display: inline-block;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      font-size: 0.75rem;
+      line-height: 1.3125rem;
+      margin-right: 1.3em;
+    }
+    ul > li > button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: #707070;
+      padding: 2rem 0;
+      transition: 0.3s;
+      font-weight: 600;
+    }
+    ul > li > button:hover {
+      color: base;
+    }
   }
 }

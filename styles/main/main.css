@@ -1,0 +1,49 @@
+@use '/blocks/base/base';
+main .emoji {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  main .emoji .emoji__quick-offer {
+    margin-top: 1.2rem;
+    padding: 0.6rem 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #1f1f1f;
+    font-weight: 100;
+    background-color: #ffdc74;
+    border-radius: 0.5rem; }
+  main .emoji .emoji__menu {
+    width: 100%;
+    margin-top: 1.6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    main .emoji .emoji__menu .emoji__option-link {
+      cursor: pointer;
+      border: 1px solid #dadada;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      color: #1f1f1f;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main .emoji .emoji__menu .emoji__option-link p {
+        padding: 1rem 0 1rem 3em;
+        font-weight: 900;
+        padding-left: 0.3rem; }
+      main .emoji .emoji__menu .emoji__option-link img {
+        padding: 1rem 0 1rem 0;
+        max-width: 30px; }
+    main .emoji .emoji__menu .emoji__option-link:hover {
+      background-color: base; }
+  main .emoji .emoji__bold {
+    font-weight: 900; }
+  main .emoji .emoji__link {
+    text-decoration: none;
+    color: #266dd9; }
+
+/*# sourceMappingURL=main.css.map */
