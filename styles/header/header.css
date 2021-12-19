@@ -1,59 +1,99 @@
-/*
-Error: Invalid CSS after "    color: base": expected ";", was ".$purple-color;"
-        on line 38 of blocks/header/header.scss
+body {
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+  background-color: #ffffff;
+  width: 100%; }
 
-33:     cursor: pointer;
-34:     color: #1f1f1f;
-35:   }
-36:   ul > li:hover {
-37:     font-weight: 900;
-38:     color: base.$purple-color;
-39:   }
-40: 
-41:   ul > li > a {
-42:     text-decoration: none;
-43:     padding: 0.8rem 1em;
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0 1rem; }
 
-Backtrace:
-blocks/header/header.scss:38
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:815:in `block in try_declaration'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1284:in `rethrow'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:820:in `try_declaration'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-D:/Apps/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"    color: base\": expected \";\", was \".$purple-color;\"\A         on line 38 of blocks/header/header.scss\A \A 33:     cursor: pointer;\A 34:     color: #1f1f1f;\A 35:   }\A 36:   ul > li:hover {\A 37:     font-weight: 900;\A 38:     color: base.$purple-color;\A 39:   }\A 40: \A 41:   ul > li > a {\A 42:     text-decoration: none;\A 43:     padding: 0.8rem 1em;"; }
+.header .header__announcement {
+  background-color: #f5f3f3; }
+.header .header__logo {
+  max-width: 80px; }
+.header .header__content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between; }
+.header ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+.header ul > li {
+  display: inline-block;
+  float: left;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  line-height: 1.3125rem;
+  color: #1f1f1f; }
+.header ul > li:hover {
+  cursor: pointer;
+  color: #1f1f1f; }
+.header ul > li:hover {
+  font-weight: 900;
+  color: #6c43bf; }
+.header ul > li > a {
+  text-decoration: none;
+  padding: 0.8rem 1em; }
+.header .header__left-part {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center; }
+.header .header__left-list {
+  margin-left: 2rem; }
+  .header .header__left-list .header__left-list_selected {
+    background-color: white;
+    font-weight: 900;
+    color: #6c43bf; }
+.header .header__right-part {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center; }
+  .header .header__right-part button {
+    background-color: transparent;
+    border: none;
+    margin: 0 0.5rem;
+    cursor: pointer; }
+  .header .header__right-part .header__login-btn {
+    color: #266dd9;
+    font-weight: 600; }
+.header .header__vert-line {
+  width: 1px;
+  height: 1.5rem;
+  background-color: #dadada; }
+.header .header__navigation {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
+  .header .header__navigation ul {
+    overflow: auto;
+    clear: both;
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .header .header__navigation ul > li {
+    display: inline-block;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+    line-height: 1.3125rem;
+    margin-right: 1.3em; }
+  .header .header__navigation ul > li > button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #707070;
+    padding: 2rem 0;
+    transition: 0.3s;
+    font-weight: 600; }
+  .header .header__navigation ul > li > button:hover {
+    color: #6c43bf; }
+
+/*# sourceMappingURL=header.css.map */

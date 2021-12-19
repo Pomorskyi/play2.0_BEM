@@ -1,4 +1,4 @@
-@use 'blocks/base/base';
+@import '../base/base';
 
 .header {
   .header__announcement {
@@ -35,7 +35,7 @@
   }
   ul > li:hover {
     font-weight: 900;
-    color: base.$purple-color;
+    color: $purple-color;
   }
 
   ul > li > a {
@@ -55,7 +55,7 @@
     .header__left-list_selected {
       background-color: white;
       font-weight: 900;
-      color: base;
+      color: $purple-color;
     }
   }
 
@@ -111,7 +111,7 @@
       font-weight: 600;
     }
     ul > li > button:hover {
-      color: base;
+      color: $purple-color;
     }
   }
 }

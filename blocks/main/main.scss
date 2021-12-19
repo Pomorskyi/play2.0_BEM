@@ -1,4 +1,4 @@
-@use '/blocks/base/base';
+@import '../base/base';
 
 main {
   .emoji {
@@ -45,7 +45,10 @@ main {
         }
       }
       .emoji__option-link:hover {
-        background-color: base;
+        background-color: $purple-color;
+        p {
+          color: white;
+        }
       }
     }
     .emoji__bold {

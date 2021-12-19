@@ -1,0 +1,115 @@
+body {
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+  background-color: #ffffff;
+  width: 100%; }
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0 1rem; }
+
+main .emoji {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  main .emoji .emoji__quick-offer {
+    margin-top: 1.2rem;
+    padding: 0.6rem 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #1f1f1f;
+    font-weight: 100;
+    background-color: #ffdc74;
+    border-radius: 0.5rem; }
+  main .emoji .emoji__menu {
+    width: 100%;
+    margin-top: 1.6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    main .emoji .emoji__menu .emoji__option-link {
+      cursor: pointer;
+      border: 1px solid #dadada;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      color: #1f1f1f;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main .emoji .emoji__menu .emoji__option-link p {
+        padding: 1rem 0 1rem 3em;
+        font-weight: 900;
+        padding-left: 0.3rem; }
+      main .emoji .emoji__menu .emoji__option-link img {
+        padding: 1rem 0 1rem 0;
+        max-width: 30px; }
+    main .emoji .emoji__menu .emoji__option-link:hover {
+      background-color: #6c43bf; }
+      main .emoji .emoji__menu .emoji__option-link:hover p {
+        color: white; }
+  main .emoji .emoji__bold {
+    font-weight: 900; }
+  main .emoji .emoji__link {
+    text-decoration: none;
+    color: #266dd9; }
+
+.article-inner {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0; }
+
+.promotions-choser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .promotions-choser .promotions-choser__title {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 0;
+    margin-bottom: 2rem; }
+  .promotions-choser .promotions-choser__choser {
+    display: grid;
+    gap: 2rem;
+    justify-items: end;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin-bottom: 2em;
+    transform: 0.3s; }
+    .promotions-choser .promotions-choser__choser .promotions-choser__chose-btn {
+      font-size: 1.2rem;
+      width: fit-content;
+      padding: 0 0 0.8rem 0;
+      color: #707070;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid #6c43bf; }
+    .promotions-choser .promotions-choser__choser .promotions-choser__chose-btn:hover {
+      color: #6c43bf; }
+    .promotions-choser .promotions-choser__choser .promotions-choser__chose-btn_active {
+      color: #6c43bf; }
+  .promotions-choser .promotions-choser__content {
+    width: 100%; }
+    .promotions-choser .promotions-choser__content .promotions-choser__content-inner {
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      .promotions-choser .promotions-choser__content .promotions-choser__content-inner h2 {
+        text-align: center; }
+      .promotions-choser .promotions-choser__content .promotions-choser__content-inner ul {
+        margin: 0 auto;
+        padding: 0; }
+  .promotions-choser .promotions_choser__link {
+    color: #266dd9;
+    text-decoration: none; }
+  .promotions-choser .promotions_choser__link:hover {
+    text-decoration: underline; }
+
+/*# sourceMappingURL=promotions_choser.css.map */

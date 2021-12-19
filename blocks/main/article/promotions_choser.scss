@@ -1,0 +1,67 @@
+@import 'article.scss';
+
+.promotions-choser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .promotions-choser__title {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  .promotions-choser__choser {
+    display: grid;
+    gap: 2rem;
+    justify-items: end;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin-bottom: 2em;
+    transform: 0.3s;
+    .promotions-choser__chose-btn {
+      font-size: 1.2rem;
+      width: fit-content;
+      padding: 0 0 0.8rem 0;
+      color: #707070;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid $purple-color;
+    }
+    .promotions-choser__chose-btn:hover {
+      color: $purple-color;
+    }
+    .promotions-choser__chose-btn_active {
+      color: $purple-color;
+    }
+  }
+
+  .promotions-choser__content {
+    width: 100%;
+    .promotions-choser__content-inner {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      h2 {
+        text-align: center;
+      }
+      ul {
+        margin: 0 auto;
+        padding: 0;
+      }
+    }
+  }
+
+  //   url("https://media-play.pl/binaries/_ht_1640695498407/desktop/content/gallery/play/tlo/simo/noworoczna-wyprzedaz-voice_simo-bg_d.png")
+
+  .promotions_choser__link {
+    color: #266dd9;
+    text-decoration: none;
+  }
+  .promotions_choser__link:hover {
+    text-decoration: underline;
+  }
+}

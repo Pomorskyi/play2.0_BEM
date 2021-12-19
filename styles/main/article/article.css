@@ -58,4 +58,9 @@ main .emoji {
     text-decoration: none;
     color: #266dd9; }
 
-/*# sourceMappingURL=main.css.map */
+.article-inner {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0; }
+
+/*# sourceMappingURL=article.css.map */
